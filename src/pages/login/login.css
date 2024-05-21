@@ -1,0 +1,262 @@
+.loginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.page1 {
+  display: flex;
+  flex: 1 1 0%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 80vh;
+}
+.page2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #e92928;
+  border-bottom-left-radius: 12rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.header-text {
+  color: #e92928;
+
+  font-size: "DM Sans";
+  font-weight: 700;
+  size: 32px;
+  line-height: 56px;
+  align-items: start;
+}
+
+.header-dec {
+  height: 16px;
+  color: #a3aed0;
+}
+
+.fromData {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.saparater {
+  margin-top: 1.5rem;
+
+  color: #a3aed0;
+}
+
+.email,
+.password {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.lebal {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  padding: 3px;
+  font-size: 14px;
+  border: 1px solid #ccc; /* Fix typo: 'slid' to 'solid' */
+  border-radius: 5px;
+  outline: none;
+  padding-left: 1rem;
+}
+
+::placeholder {
+  color: #999;
+}
+
+.forget_check {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+  margin-top: 1rem;
+}
+
+.check {
+  display: flex;
+}
+.loged {
+  font-size: 8px;
+}
+.chBox {
+  max-height: 0.7rem;
+}
+
+.forget {
+  font-size: 8px;
+  color: #e92928;
+}
+
+.button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #e92928;
+  border-radius: 9px;
+  margin-top: 1rem;
+  color: white;
+}
+
+.notreg {
+  font-family: "DM Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.cre {
+  color: #e92928;
+}
+
+.part1 {
+  display: flex;
+  width: 50%;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img {
+  width: 5rem;
+}
+
+.spark {
+  display: flex;
+  width: 11rem;
+  
+  padding: 0.6rem;
+  border-radius: 12px; /* Border radius values for each corner */
+  border-style: solid; /* Border style */
+  border-color: #ffffff; /* Border color */
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.spark span{
+    font-weight: 800px;
+
+}
+
+.spark-text {
+  font-size: 1.4rem;
+}
+
+.part2 {
+  display: flex;
+  flex-direction: column;
+  width: 42%;
+  border-style: solid; /* Border style */
+  border-color: #dba4a4; /* Border color */
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.uper span{
+    font-family: Montserrat, sans-serif; /* Assuming "Montserrat" is the font name */
+font-size: 12px;
+font-weight: 400;
+ text-align: center;
+
+}
+
+.down {
+    font-family: Montserrat, sans-serif; /* Assuming "Montserrat" is the font name */
+font-size: 17px;
+font-weight: 600;
+ text-align: center;
+ margin-top: 1rem;
+
+}
+
+.footerP1 {
+    font-size: 10px;
+    margin-top: 3rem;
+    color: #A3AED0;
+}
+
+.footerP2{
+    display: flex;
+    width: 42%;
+    font-size: 10px;
+    margin-top: 15rem;
+     justify-content: space-between;
+     color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .loginPage{
+        flex-direction: column;
+    }
+    .page1 {
+     
+      min-height: 60vh;
+      margin-bottom: 2rem;
+    }
+  
+    .page2 {
+     
+      min-height: 80vh;
+      border-bottom-left-radius: 0px;
+    }
+  .footerP2{
+    margin-top: 6rem;
+  }
+     
+  }
+  
+   
+  @media only screen and (max-width: 576px) {
+    .page1,
+    .page2 {
+     
+      min-height: 50vh;
+    }
+  
+     
+  }
+  
+   
+  @media only screen and (max-width: 375px) {
+    .page1,
+    .page2 {
+       
+      min-height: 40vh;
+    }
+  
+    
+  }
